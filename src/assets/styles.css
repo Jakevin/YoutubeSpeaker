@@ -1,0 +1,96 @@
+body {
+    width: 100%;
+    padding: 10px;
+    font-family: "Microsoft JhengHei", sans-serif;
+    max-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.info-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 3px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switch input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+}
+
+.status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.status.active {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status.inactive {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+button {
+    padding: 8px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.error {
+    color: #c62828;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.api-link {
+    font-size: 12px;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.api-link:hover {
+    text-decoration: underline;
+}

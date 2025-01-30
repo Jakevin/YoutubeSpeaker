@@ -1,0 +1,61 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube字幕翻譯",
+    "version": "1.0.0",
+    "description": "自動獲取YouTube字幕並翻譯成中文",
+    "permissions": [
+        "storage",
+        "sidePanel",
+        "scripting",
+        "audio"
+    ],
+    "host_permissions": [
+        "https://tts_server_url/*"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    },
+    "side_panel": {
+        "default_path": "dist/index.html"
+    },
+    "action": {
+        "default_title": "YouTube字幕翻譯",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "src/assets/content-styles.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "src/assets/content-styles.css"
+            ],
+            "matches": [
+                "https://www.youtube.com/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}

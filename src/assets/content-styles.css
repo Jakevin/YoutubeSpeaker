@@ -1,0 +1,134 @@
+#yt-translation-panel {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 16px 0;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "YouTube Sans", "Roboto", sans-serif;
+}
+
+.translation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 12px;
+}
+
+.translation-header span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #030303;
+}
+
+.translation-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.translation-controls button {
+    background-color: #065fd4;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.translation-controls button:hover {
+    background-color: #0056b3;
+}
+
+.translation-content {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.subtitle-pair {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s;
+}
+
+.subtitle-pair.currently-playing {
+    background-color: #e3f2fd;
+    border-left: 4px solid #065fd4;
+}
+
+.original {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.translated {
+    color: #030303;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speak-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.speak-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.timestamp {
+    color: #666;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.loading-indicator {
+    text-align: center;
+    padding: 16px;
+    color: #666;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* 自定義滾動條樣式 */
+.translation-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.translation-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.translation-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.translation-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
