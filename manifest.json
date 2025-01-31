@@ -9,9 +9,6 @@
         "scripting",
         "audio"
     ],
-    "host_permissions": [
-        "https://tts_server_url/*"
-    ],
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self';"
     },

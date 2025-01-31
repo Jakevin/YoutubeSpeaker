@@ -9,14 +9,6 @@
 開源的版本需要自行設定 API網址、API金鑰、模型名稱。
 此外 TTS服務也需要自行在 `background.js` 中 `fetchAudioFromAPI`裡修改
 
-若TTS服務設定好後還是有問題的話，`manifest.json`中也需要設定`host_permissions`
-
-```
-"host_permissions": [
-    "https://你的TTS服務網址/*"
-]
-```
-
 ## 目前功能有
 1. 截取英文字幕
 2. 英文字幕轉中文（可自行調整目標語言）
